@@ -308,4 +308,4 @@ monitoring, human approval, incident response, and recovery testing.
 
 ## License
 
-The runtime metadata declares the project under the MIT License. 
+MIT License. 
