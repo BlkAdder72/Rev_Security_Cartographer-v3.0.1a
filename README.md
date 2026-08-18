@@ -287,13 +287,13 @@ Stop the agent or block the effect when:
 
 ## Documentation
 
-- [Security boundary](instructions/security-cartographer/SKILL.md)
-- [Quick installation](instructions/security-cartographer/INSTALL.md)
-- [Complete deployment guide](instructions/security-cartographer/DEPLOYMENT_GUIDE.md)
-- [Call protocol](instructions/security-cartographer/CALL_PROTOCOL.md)
-- [Integration contract](context/security-cartographer/INTEGRATION_CONTRACT.md)
-- [ICM architecture](context/security-cartographer/references/ICM_ARCHITECTURE.md)
-- [Threat model](context/security-cartographer/references/THREAT_MODEL.md)
+- [Security boundary](SKILL.md)
+- [Quick installation](INSTALL.md)
+- [Complete deployment guide](DEPLOYMENT_GUIDE.md)
+- [Call protocol](CALL_PROTOCOL.md)
+- [Integration contract](INTEGRATION_CONTRACT.md)
+- [ICM architecture](ICM_ARCHITECTURE.md)
+- [Threat model](THREAT_MODEL.md)
 
 ## What this project can fairly claim
 
@@ -308,4 +308,5 @@ monitoring, human approval, incident response, and recovery testing.
 
 ## License
 
-MIT License. 
+The runtime metadata declares the project under the MIT License. When publishing the repository, add
+the project's `LICENSE` file at the repository root so GitHub can display and index the license.
