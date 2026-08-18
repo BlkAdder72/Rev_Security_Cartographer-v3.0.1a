@@ -308,5 +308,4 @@ monitoring, human approval, incident response, and recovery testing.
 
 ## License
 
-The runtime metadata declares the project under the MIT License. When publishing the repository, add
-the project's `LICENSE` file at the repository root so GitHub can display and index the license.
+The project is under the MIT License. 
