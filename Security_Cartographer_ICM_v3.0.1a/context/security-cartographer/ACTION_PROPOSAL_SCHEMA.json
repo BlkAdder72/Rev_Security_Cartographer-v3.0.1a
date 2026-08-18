@@ -1,0 +1,43 @@
+{
+  "schema_version": "2020-12-compatible",
+  "title": "Security Cartographer Action Proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "target",
+    "intent_id",
+    "data_classification",
+    "source_trust",
+    "side_effect",
+    "count",
+    "agent_id",
+    "chain_depth",
+    "context_run_id"
+  ],
+  "properties": {
+    "type": {"type": "string", "minLength": 1},
+    "target": {"type": "string", "minLength": 1},
+    "intent_id": {"type": "string", "minLength": 1},
+    "data_classification": {"type": "string", "minLength": 1},
+    "source_trust": {
+      "type": "string",
+      "enum": ["user", "verified-context", "deterministic"]
+    },
+    "side_effect": {"type": "string", "minLength": 1},
+    "count": {"type": "integer", "minimum": 1},
+    "agent_id": {"type": "string", "minLength": 1},
+    "chain_depth": {"type": "integer", "minimum": 0},
+    "tool_name": {"type": "string", "minLength": 1},
+    "tool_schema_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "context_run_id": {"type": "string", "minLength": 1},
+    "approval": {"type": "object"}
+  }
+}

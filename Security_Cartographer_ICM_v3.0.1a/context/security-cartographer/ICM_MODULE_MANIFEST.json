@@ -1,0 +1,14 @@
+{
+  "name": "Security Cartographer",
+  "version": "3.0.1",
+  "package_type": "callable-icm-security-module",
+  "top_level_folders": ["instructions", "context", "memory"],
+  "instruction_entrypoint": "instructions/security-cartographer/SKILL.md",
+  "deployment_guide": "instructions/security-cartographer/DEPLOYMENT_GUIDE.md",
+  "call_protocol": "instructions/security-cartographer/CALL_PROTOCOL.md",
+  "runtime_source": "context/security-cartographer/runtime",
+  "policy_template": "context/security-cartographer/templates/source-policy.template.json",
+  "memory_state": "memory/security-cartographer/state.json",
+  "requires_external_protected_state": true,
+  "requires_orchestrator_invocation": true
+}

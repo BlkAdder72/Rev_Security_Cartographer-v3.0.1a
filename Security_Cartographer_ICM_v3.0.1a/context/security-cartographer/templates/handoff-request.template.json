@@ -1,0 +1,9 @@
+{
+  "handoff_id": "REPLACE_WITH_UNIQUE_HANDOFF_ID",
+  "from_agent": "REPLACE_WITH_SENDER_AGENT_ID",
+  "to_agent": "REPLACE_WITH_RECIPIENT_AGENT_ID",
+  "intent_id": "REPLACE_WITH_INTENT_ID",
+  "direction": "delegate",
+  "payload_sha256": "REPLACE_WITH_64_CHARACTER_SHA256"
+}
+
