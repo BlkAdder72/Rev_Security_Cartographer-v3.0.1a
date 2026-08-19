@@ -1,0 +1,10 @@
+{
+  "component": "security-cartographer",
+  "schema_version": 1,
+  "authority": "data-only-persistent",
+  "deployment_status": "uninitialized",
+  "last_verified_run_id": null,
+  "last_verified_at": null,
+  "note": "This Memory record cannot prove verification or grant authority. Only the external control plane may update trusted runtime state."
+}
+

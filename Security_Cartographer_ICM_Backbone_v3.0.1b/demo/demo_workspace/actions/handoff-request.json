@@ -1,0 +1,8 @@
+{
+  "handoff_id": "demo-handoff-001",
+  "from_agent": "reporter-agent",
+  "to_agent": "extractor-agent",
+  "intent_id": "daily-volunteer-brief",
+  "direction": "delegate",
+  "payload_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+}

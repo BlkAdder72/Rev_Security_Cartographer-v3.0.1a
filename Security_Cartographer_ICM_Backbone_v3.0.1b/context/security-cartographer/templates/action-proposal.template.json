@@ -1,0 +1,13 @@
+{
+  "type": "write_report",
+  "target": "reports/output.md",
+  "intent_id": "REPLACE_WITH_INTENT_ID",
+  "data_classification": "public",
+  "source_trust": "verified-context",
+  "side_effect": "local-write",
+  "count": 1,
+  "agent_id": "REPLACE_WITH_AGENT_ID",
+  "chain_depth": 0,
+  "context_run_id": "CONTEXT_RUN_ID"
+}
+

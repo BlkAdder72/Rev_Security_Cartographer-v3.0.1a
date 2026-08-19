@@ -1,0 +1,60 @@
+{
+  "policy_version": 2,
+  "icm_mode": "required",
+  "allowed_schemes": ["http"],
+  "allowed_hosts": ["127.0.0.1"],
+  "allowed_url_prefixes": [],
+  "allowed_content_types": ["text/markdown", "text/plain"],
+  "allow_redirects": false,
+  "allow_private_networks": false,
+  "allow_nested_remote_references": false,
+  "allow_source_query_strings": false,
+  "max_bytes": 100000,
+  "max_local_bytes": 1000000,
+  "max_files": 1000,
+  "max_external_sources": 10,
+  "max_baseline_age_hours": 720,
+  "timeout_seconds": 5,
+  "require_agent_identity": true,
+  "max_tool_chain_depth": 2,
+  "trusted_agents": [
+    {
+      "agent_id": "reporter-agent",
+      "allowed_intents": ["daily-volunteer-brief"],
+      "allowed_handoff_to": ["extractor-agent"]
+    },
+    {
+      "agent_id": "extractor-agent",
+      "allowed_intents": ["daily-volunteer-brief"],
+      "allowed_handoff_to": ["reporter-agent"]
+    }
+  ],
+  "allowed_tools": [
+    {
+      "name": "bulletin-reader",
+      "schema_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "allowed_agents": ["extractor-agent"],
+      "mode": "read-only"
+    }
+  ],
+  "always_deny_action_types": [
+    "execute_code",
+    "network_upload",
+    "delete",
+    "change_permissions",
+    "read_credentials",
+    "modify_agent_memory",
+    "install_tool"
+  ],
+  "intent_contracts": [
+    {
+      "intent_id": "daily-volunteer-brief",
+      "type": "write_report",
+      "target_prefixes": ["reports"],
+      "allowed_data_classifications": ["public"],
+      "allowed_side_effects": ["local-write"],
+      "max_count": 1,
+      "require_human_approval": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "entries": [],
+  "instruction_authority": false,
+  "purpose": "Synthetic persistent state for the ICM demonstration"
+}

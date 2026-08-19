@@ -1,0 +1,11 @@
+{
+  "type": "write_report",
+  "target": "reports/daily-brief.md",
+  "intent_id": "daily-volunteer-brief",
+  "data_classification": "public",
+  "source_trust": "verified-context",
+  "side_effect": "local-write",
+  "count": 1,
+  "agent_id": "reporter-agent",
+  "chain_depth": 0
+}

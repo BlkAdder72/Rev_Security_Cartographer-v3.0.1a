@@ -1,0 +1,49 @@
+{
+  "policy_version": 1,
+  "icm_mode": "required",
+  "allowed_schemes": ["https"],
+  "allowed_hosts": [],
+  "allowed_url_prefixes": [],
+  "allowed_content_types": ["text/plain", "text/markdown", "application/json"],
+  "allow_redirects": false,
+  "allow_private_networks": false,
+  "allow_nested_remote_references": false,
+  "allow_source_query_strings": false,
+  "max_bytes": 500000,
+  "max_local_bytes": 50000000,
+  "max_files": 10000,
+  "max_external_sources": 25,
+  "max_baseline_age_hours": 168,
+  "timeout_seconds": 8,
+  "require_agent_identity": true,
+  "max_tool_chain_depth": 2,
+  "trusted_agents": [
+    {
+      "agent_id": "REPLACE_WITH_AGENT_ID",
+      "allowed_intents": ["REPLACE_WITH_INTENT_ID"],
+      "allowed_handoff_to": []
+    }
+  ],
+  "allowed_tools": [],
+  "always_deny_action_types": [
+    "execute_code",
+    "network_upload",
+    "delete",
+    "change_permissions",
+    "read_credentials",
+    "modify_agent_memory",
+    "install_tool"
+  ],
+  "intent_contracts": [
+    {
+      "intent_id": "REPLACE_WITH_INTENT_ID",
+      "type": "write_report",
+      "target_prefixes": ["reports"],
+      "allowed_data_classifications": ["public"],
+      "allowed_side_effects": ["local-write"],
+      "max_count": 1,
+      "require_human_approval": false
+    }
+  ]
+}
+
